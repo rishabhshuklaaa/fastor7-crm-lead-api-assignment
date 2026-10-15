@@ -67,3 +67,23 @@ Protected routes need header: `Authorization: Bearer <token>`
 ## Design Notes
 - Claiming uses an atomic `findOneAndUpdate({ _id, claimedBy: null })`, so two counselors cannot claim the same lead.
 - Passwords are hashed with bcrypt and never returned in responses.
+
+
+## Frontend (React) - Fastor7 Task
+
+Location: `frontend/`
+
+Stack: React (Vite), React Router, Axios
+
+Flow:
+1. Login screen: phone number -> register API (sends OTP)
+2. OTP screen: login API (default OTP 123456), JWT saved in localStorage
+3. Restaurants screen: fetches restaurants with `Authorization: Bearer <token>`, with pagination
+
+Run:
+    cd frontend
+    npm install
+    npm run dev
+
+Note: The Figma file was not accessible (access denied), so a clean mobile-style UI was built.
+At submission time, staging.fastor.ai was returning 502 Bad Gateway; the flow was verified working earlier.
