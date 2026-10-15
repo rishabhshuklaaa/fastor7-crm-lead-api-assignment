@@ -389,13 +389,12 @@ a {
   color: var(--text-main);
 }
 
-/* Promo Banner with Yellow Circles */
 .promo-banner {
   width: 100%;
   max-width: 520px;
   height: 205px;
   border-radius: 24px;
-  overflow: hidden; /* Clipping the yellow circles */
+  overflow: hidden; 
   display: flex;
   margin: 0 auto;
   position: relative;
@@ -404,7 +403,7 @@ a {
 .promo-left {
   width: 47%;
   height: 100%;
-  background-color: #F44720; /* Vivid orange-red */
+  background-color: #F44720; 
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -417,7 +416,7 @@ a {
   content: '';
   position: absolute;
   top: -60px;
-  left: 80%; /* Center me shift kar diya */
+  left: 80%; 
   transform: translateX(-50%);
   width: 70px;
   height: 65px;
@@ -452,13 +451,13 @@ a {
   transform: translateY(-50%);
   width: 220px;
   height: 220px;
-  border-radius: 50%; /* Is circle ka left part hi parabola banega */
+  border-radius: 50%; 
   z-index: 1;
 }
 
 .promo-text {
   position: relative;
-  z-index: 1; /* Text stays above circles */
+  z-index: 1; 
   text-align: left;
 }
 
@@ -509,14 +508,14 @@ a {
 .pill-indicator {
   width: 12px;
   height: 4px;
-  background-color: #FFEB99; /* Pale yellow */
+  background-color: #FFEB99; 
   border-radius: 2px;
   transition: all 0.2s;
 }
 
 .pill-indicator.active {
-  background-color: #F44720; /* Bright orange-red */
-  width: 16px; /* Slightly wider active pill */
+  background-color: #F44720; 
+  width: 16px; 
 }
 
 .dot {
@@ -760,7 +759,7 @@ a {
 .item-price {
   font-size: 28px;
   font-weight: 800;
-  color: #C44601; /* Orange-brown color */
+  color: #C44601; 
 }
 
 .quantity-stepper {
